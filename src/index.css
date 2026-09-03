@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root { font-family: 'DM Sans', system-ui, sans-serif; color: #182235; background: #fff; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+h1, h2 { font-family: 'Playfair Display', Georgia, serif; }
+.py-lg-6 { padding-top: 5.5rem !important; padding-bottom: 5.5rem !important; }

@@ -1,0 +1,8 @@
+import { useState } from 'react';
+
+export default function LoginForm() {
+  const [form, setForm] = useState({ email: '', password: '' });
+  const [message, setMessage] = useState(null);
+  const submit = (e) => { e.preventDefault(); const valid = /^\S+@\S+\.\S+$/.test(form.email) && form.password.length >= 6; setMessage(valid ? { ok: true, text: 'Welcome back! You are logged in with demo authentication.' } : { ok: false, text: 'Enter a valid email and a password of at least 6 characters.' }); };
+  return <section id="login" className="py-5"><div className="container"><div className="row justify-content-center"><div className="col-md-7 col-lg-5"><div className="card login-card border-0 shadow-sm"><div className="card-body p-4 p-lg-5"><div className="text-center mb-4"><div className="login-icon"><i className="bi bi-person-circle" /></div><h2 className="h3 mt-3">Welcome back</h2><p className="text-secondary mb-0">Log in to manage your job search.</p></div>{message && <div className={`alert alert-${message.ok ? 'success' : 'danger'} small`}>{message.text}</div>}<form noValidate onSubmit={submit}><label className="form-label">Email Address</label><input className="form-control mb-3" type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} /><label className="form-label">Password</label><input className="form-control mb-4" type="password" value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} /><button className="btn btn-primary w-100 py-2">Login</button></form><p className="text-center text-secondary small mt-4 mb-0">New here? <a href="#register">Create an account</a></p></div></div></div></div></div></section>;
+}

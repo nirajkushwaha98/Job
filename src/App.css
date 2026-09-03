@@ -1,0 +1,36 @@
+:root { --ink: #182235; --primary: #174f9b; --pale: #edf5ff; }
+.navbar { box-shadow: 0 1px 0 rgba(24, 34, 53, .05); }
+.navbar .nav-link { color: #526072; font-weight: 500; }
+.navbar .nav-link:hover { color: var(--primary); }
+.btn-primary { --bs-btn-bg: #174f9b; --bs-btn-border-color: #174f9b; --bs-btn-hover-bg: #123f7d; --bs-btn-hover-border-color: #123f7d; }
+.hero-section { background: linear-gradient(118deg, #f4f8ff 0%, #e8f1ff 58%, #f7fbff 100%); overflow: hidden; }
+.hero-section h1 { font-size: clamp(2.8rem, 5vw, 4.7rem); letter-spacing: -.05em; color: var(--ink); line-height: 1.05; }
+.hero-section h1 span { color: var(--primary); }
+.eyebrow { color: #174f9b; font-weight: 700; font-size: .82rem; letter-spacing: .06em; text-transform: uppercase; }
+.btn-white { background: #fff; color: var(--ink); border: 1px solid #d4dfed; }
+.btn-white:hover { background: #f8fbff; border-color: #b9cae1; }
+.hero-card { background: #fff; border-radius: 1.25rem; padding: 1.75rem; transform: rotate(2deg); border: 1px solid rgba(23,79,155,.08); }
+.avatar, .login-icon { width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; font-size: 1.35rem; }
+.mini-job { display: flex; align-items: center; gap: .75rem; padding: .85rem 0; border-top: 1px solid #eef1f5; font-size: .88rem; }
+.mini-job small { display: block; color: #738095; margin-top: .15rem; }
+.job-logo { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 9px; font-weight: 700; }
+.dashboard-strip { background: #fff; }
+.summary-card { display: flex; align-items: center; padding: 1.1rem; gap: .85rem; border: 1px solid #e7ebf0; border-radius: 12px; background: #fff; transition: box-shadow .2s; }
+.summary-card:hover, .job-card:hover { box-shadow: 0 .75rem 2rem rgba(23, 79, 155, .1) !important; }
+.summary-icon { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 10px; font-size: 1.2rem; }
+.filter-bar { border-radius: 12px; }
+.job-card { border-radius: 13px; transition: transform .2s, box-shadow .2s; }
+.job-card:hover { transform: translateY(-3px); }
+.company-mark { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 10px; background: #e9f2ff; color: #174f9b; font-weight: 700; }
+.category-badge { color: #174f9b; background: #edf5ff; font-weight: 600; }
+.job-meta { display: flex; flex-wrap: wrap; gap: .7rem; }
+.profile-card { border-radius: 16px; }
+.profile-avatar { flex: 0 0 auto; width: 76px; height: 76px; border-radius: 50%; display: grid; place-items: center; background: #174f9b; color: #fff; font-size: 1.4rem; font-weight: 700; }
+.skill-badge { padding: .5rem .7rem; background: #edf5ff; color: #174f9b; font-weight: 600; }
+.application-card { display: flex; gap: 1rem; align-items: flex-start; padding: 1.1rem; border: 1px solid #e7ebf0; border-radius: 12px; }
+.empty-applications { background: #f6faff; border: 1px dashed #bdd1eb; }
+.login-card { border-radius: 16px; }
+.login-icon { margin: auto; background: #e9f2ff; color: #174f9b; font-size: 1.5rem; }
+.toast-alert { position: fixed; right: 1.5rem; bottom: 1.5rem; z-index: 1030; max-width: 360px; }
+.footer { background: #111d31; color: #d9e1ec; font-size: .9rem; }
+@media (max-width: 575.98px) { .toast-alert { right: 1rem; left: 1rem; bottom: 1rem; } .hero-section h1 { font-size: 2.8rem; } }
